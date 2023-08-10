@@ -88,11 +88,47 @@ header > div {
 /* carousel styling starts here */
 .mySlides {
     display: none;
+    position: relative;
 }
 
 .mySlides img {
     height: 70vh;
 }
+
+.captions {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: justify;
+    top: 50%;
+    transform: translateY(-50px);
+}
+.captions h1 {
+    text-align: start;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+.caption_description {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-shadow: 0 0 10px black;
+}
+
+.captions_button {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    padding: 15px 10px;
+    font-size: 1.25rem;
+    text-shadow: 0 0 10px black;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
