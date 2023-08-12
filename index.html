@@ -40,8 +40,8 @@
                                 dreams into reality.
                             </p>
                             <h1>Destination Escapes for Every Soul</h1>
-                            <button class="captions_button">
-                                Get In Touch
+                            <button class="captions_button openModalButton">
+                                🫵🏻 Get In Touch 🫵🏻
                             </button>
                         </div>
                         <img src="/images/bg/1.jpg" style="width: 100%" />
@@ -54,8 +54,8 @@
                                 beauty and wonders of diverse destinations.
                             </p>
                             <h1>Destination Discovery Awaits</h1>
-                            <button class="captions_button">
-                                Get In Touch
+                            <button class="captions_button openModalButton">
+                                🫵🏻 Get In Touch 🫵🏻
                             </button>
                         </div>
                         <img src="/images/bg/2.jpg" style="width: 100%" />
@@ -68,8 +68,8 @@
                                 experiences tailored to every traveler's soul.
                             </p>
                             <h1>Destination Dreams Begin Here</h1>
-                            <button class="captions_button">
-                                Get In Touch
+                            <button class="captions_button openModalButton">
+                                🫵🏻 Get In Touch 🫵🏻
                             </button>
                         </div>
                         <img src="/images/bg/3.jpg" style="width: 100%" />
@@ -79,10 +79,106 @@
             </header>
 
             <main>
-                <div id="wrapper">
-                    <h3 id="spent_time"></h3>
-                    <h3 id="overall_time"></h3>
-                </div>
+                <section id="wrapper">
+                    <div class="container time_spent">
+                        <h3 id="spent_time"></h3>
+                        <h3 id="overall_time"></h3>
+                    </div>
+                    <div class="container">
+                        <div class="service_wrapper">
+                            <div class="container_row">
+                                <div class="container_column tour_one">
+                                    <h1>International Awards</h1>
+                                </div>
+                                <div class="container_column tour_two">
+                                    <h1>Happy Travels</h1>
+                                </div>
+                                <div class="container_column tour_three">
+                                    <h1>Team Member</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container counter_container">
+                        <h2 class="underline">
+                            Over a Decade of Chasing Our Dream
+                        </h2>
+                        <div class="service_wrapper">
+                            <div class="container_row">
+                                <div class="service_column service_one">
+                                    <div class="content-overlay">
+                                        <h2>
+                                            <span
+                                                class="counter"
+                                                data-count="12"
+                                                >0</span
+                                            >
+                                        </h2>
+                                        <p>International Awards</p>
+                                    </div>
+                                </div>
+                                <div class="service_column service_two">
+                                    <div class="content-overlay">
+                                        <h2>
+                                            <span
+                                                class="counter"
+                                                data-count="50"
+                                                >0</span
+                                            >
+                                            +
+                                        </h2>
+                                        <p>Happy Travels</p>
+                                    </div>
+                                </div>
+                                <div class="service_column service_three">
+                                    <div class="content-overlay">
+                                        <h2>
+                                            <span
+                                                class="counter"
+                                                data-count="42"
+                                                >0</span
+                                            >
+                                        </h2>
+                                        <p>Team Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="underline">Contact Us</h2>
+                        <form id="myForm" action="#">
+                            <div class="row">
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="firstname"
+                                    placeholder="Your name.."
+                                    class="inline-input"
+                                />
+                                <input
+                                    type="text"
+                                    id="lname"
+                                    name="lastname"
+                                    placeholder="Your last name.."
+                                    class="inline-input"
+                                />
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email Address.."
+                                    class="inline-input"
+                                />
+                                <input
+                                    type="submit"
+                                    value="Submit"
+                                    class="submit-button"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </main>
 
             <footer>
@@ -98,23 +194,6 @@
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
-                        <!-- Goggle Maps Conditional Rendering -->
-                        <div id="mapModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close" id="closeButton"
-                                    >&times;</span
-                                >
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742891.0011917428!2d-81.28632829676519!3d43.33690549119294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sin!4v1691685525365!5m2!1sen!2sin"
-                                    width="100%"
-                                    height="100%"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                            </div>
-                        </div>
                     </div>
                     <div class="footer_column footer_links">
                         <div class="link_section">
@@ -148,6 +227,41 @@
                 <p id="copyright">Copyright &copy; 2023 The Destinations</p>
             </footer>
         </div>
+        <!-- Goggle Maps Conditional Rendering -->
+        <div id="mapModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeButton">&times;</span>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742891.0011917428!2d-81.28632829676519!3d43.33690549119294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sin!4v1691685525365!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+        <!-- modal start here  -->
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal-content">
+                <span id="closeModalButton" class="close-button">&times;</span>
+                <h2>Its JS Modal</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis hic possimus ea veniam, reiciendis quasi esse
+                    consequatur? Qui facere deserunt praesentium? Impedit
+                    architecto fugiat quia mollitia debitis voluptatibus laborum
+                    perferendis, aperiam possimus, autem obcaecati reprehenderit
+                    ipsam odio asperiores! Nesciunt quaerat laborum quasi
+                    voluptas corrupti, dolorem reiciendis eaque amet incidunt ea
+                    esse quae nam fuga perferendis obcaecati ex veniam nostrum
+                    nulla dolor velit totam enim iusto modi? Illo impedit
+                    expedita similique debitis eligendi quisquam quod magnam, ex
+                </p>
+            </div>
+        </div>
+        <!-- modal ends here  -->
         <script src="./index.js"></script>
     </body>
 </html>

@@ -127,6 +127,7 @@ header > div {
     padding: 15px 10px;
     font-size: 1.25rem;
     text-shadow: 0 0 10px black;
+    cursor: pointer;
 }
 
 /* Slideshow container */
@@ -186,10 +187,13 @@ section {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #closeButton {
-    color: black;
+    cursor: pointer;
+    color: white;
+    background-color: black;
 }
 .footer_maps {
     position: relative;
@@ -246,9 +250,16 @@ iframe {
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 800px;
-    height: 45%;
     background-color: white;
     overflow: hidden;
+    height: 50vh;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+#modalOverlay {
+    display: none;
 }
 
 /* Close button */
@@ -259,6 +270,64 @@ iframe {
     font-size: 24px;
     cursor: pointer;
 }
+
+/* Form Styling */
+
+form {
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 20px;
+}
+input[type="text"],
+select,
+textarea {
+    width: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #20b4a9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #239095;
+}
+
+.container {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.time_spent {
+    border: 1px solid lightgrey;
+}
+.row {
+    display: flex;
+}
+
+.inline-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#closeModalButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
 ul {
     padding: 0;
     list-style: none;
@@ -396,6 +465,112 @@ nav a {
     font-variant: petite-caps;
     text-decoration: underline;
     font-weight: 600;
+}
+
+.underline {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 5px;
+}
+.container_row {
+    display: flex;
+    justify-content: center;
+}
+
+.container_column {
+    position: relative;
+    width: 33.33%;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+    font-weight: bold;
+    padding: 10px;
+    min-height: 400px; /* Add a minimum height to ensure content is visible */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to contain the image */
+    transition: transform 0.7s ease; /* Slow transition for zoom effect */
+}
+
+.container_column h1 {
+    font-size: 2rem !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.service_column {
+    position: relative;
+    width: 33.33%;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Set background image to cover container */
+    color: black;
+    padding: 10px;
+    min-height: 200px; /* Add a minimum height to ensure content is visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-overlay h2 {
+    font-size: 3.5rem;
+    padding: 0;
+}
+
+.content-overlay p {
+    font-weight: bold;
+}
+.content-overlay h2,
+.content-overlay p {
+    color: black;
+}
+
+.tour_one {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./images/bg/image_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Set background image to cover container */
+}
+.tour_two {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./images/bg/image_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Set background image to cover container */
+}
+.tour_three {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./images/bg/image_3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Set background image to cover container */
+}
+
+.service_one {
+    background-image: url("./images/bg/11.jpg");
+}
+.service_two {
+    background-image: url("./images/bg/12.jfif");
+}
+.service_three {
+    background-image: url("./images/bg/13.jfif");
 }
 
 h1 a {
