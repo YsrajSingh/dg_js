@@ -15,7 +15,7 @@ Welcome to my The Destinations Portfolio Project documentation. This project sho
 
 ## Deployment Link
 
-To view website, simply open the [index.html](https://ysrajsingh.github.io/student-portfolio/) file in a web browser. Navigate through the different pages using the provided hyperlinks.
+To view website, simply open the [index.html](https://ysrajsingh.github.io/the-destinations/) file in a web browser. Navigate through the different pages using the provided hyperlinks.
 
 ## Usage
 
